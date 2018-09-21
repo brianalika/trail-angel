@@ -1,0 +1,167 @@
+/* HTML Tags */
+
+body {
+  max-width: 100%;
+  background: url('../../assets/images/background.gif') no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/*** Typography ***/
+
+h1,h2,h3,h4,h5 {
+  page
+  color: #424242;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+td::first-letter {
+  text-transform: capitalize;
+}
+
+/*** Classes and IDs ***/
+
+.btn-mini {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+#resetBtn {
+  position: absolute;
+  line-height: 21px;
+  font-size: 12px;
+  padding: 0 0.2rem 0.5rem;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.search-box:not(:valid) ~ .close-icon {
+	display: none;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.carousel .carousel-item {
+  opacity: 1 !important;
+}
+
+brand-logo {
+  font-family: 'Roboto', sans-serif;
+}
+
+img#ta-logo {
+  display: inline-block;
+  margin-top: .5rem;
+  max-width: 50%;
+}
+
+.trail-location {
+  font-weight: 300;
+}
+
+.summary-text {
+  padding-top: 1%
+}
+
+.difficulty {
+  padding-top: 1%;
+}
+
+/*** Search Form and Inputs ***/
+
+#topbarsearch .input-field .prefix {
+  width: 0rem !important;
+}
+
+#topbarsearch nav ul li:hover,
+nav ul li.active {
+  background-color: none !important;
+}
+
+input::placeholder {
+  margin-top: 1rem;
+  color: #fff;
+  font-weight: lighter;
+}
+
+.input-field .prefix~input,
+.input-field .prefix~textarea,
+.input-field .prefix~label,
+.input-field .prefix~.validate~label,
+.input-field .prefix~.autocomplete-content {
+  margin-left: 1rem !important;
+}
+
+.input-field .prefix.active {
+  color: #fff !important;
+}
+
+/* Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*** Media Queries ***/
+
+@media only screen and (max-width: 480px) {
+  
+  body {
+    background: url('../../assets/images/mobile-background.png') no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+
+  #weather-info {
+    width: 360px;
+  }
+
+  img#ta-logo {
+    margin-top: .6rem;
+    margin-left: 6%;
+    max-width: 85%;
+  }
+
+  .mobileIcon {
+    color: #424242;
+  }
+
+  h5 {
+    font-size: 1.4rem;
+  }
+
+  input::placeholder {
+    color: #424242;
+  }
+
+  .input-field {
+    height: 50px;
+    border: 0;
+    margin: 0;
+  }
+
+  .trailInfoDiv{
+    background-color: beige;
+  }
+}
